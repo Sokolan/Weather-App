@@ -17,13 +17,13 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-        include: [
-          path.resolve(__dirname, './src/style'),
-        ],
-      },
+      // {
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      //   include: [
+      //     path.resolve(__dirname, './src/style'),
+      //   ],
+      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         include: [
