@@ -217,7 +217,7 @@ const createFooter = () => {
   // Create git link with git icon
   const createGitLinkImg = () => {
     const gitLink = createElement("a", "git-link", [
-      ["href", "https://github.com/Sokolan/ToDo-List"],
+      ["href", "https://sokolan.github.io/Weather-App/"],
       ["target", "_blank"],
     ]);
     const gitIcon = createImgElement(gitImg, "git-img");
