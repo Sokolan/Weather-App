@@ -1355,7 +1355,7 @@ const Weather = async () => {
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "2e02e4d4e4b6d5f3d2e6.jpg";
+module.exports = __webpack_require__.p + "700e3affcec230b6c84c.jpg";
 
 /***/ }),
 
