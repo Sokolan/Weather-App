@@ -1,0 +1,91 @@
+.main-display {
+  background-color: rgba(128, 128, 128, 0.315);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.display-container {
+  padding: 16px;
+  height: 50vh;
+  width: 80vw;
+  background: linear-gradient(210deg, #0034503c, rgb(255, 255, 255));
+  border-radius: 16px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.44);
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) auto;
+  grid-template-rows: minmax(200px, 1fr) 4fr;
+}
+
+.forecast-container {
+  grid-column: span 2;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-items: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.current-location-container {
+  font-size: 32px;
+  overflow: scroll;
+  margin: 16px;
+  letter-spacing: 1.25px;
+  font-weight: 700;
+  font-family: "Roboto";
+  color: #fbfef9;
+}
+
+.change-units {
+  padding: 8px 16px;
+  margin: 16px;
+  width: 96px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #00000058;
+  background-color: #fbfef9c3;
+  color: #191923ba;
+  border-radius: 8px;
+  justify-self: right;
+  align-self: baseline;
+}
+
+.day-forecast-container {
+  height: 72%;
+  width: 64px;
+  display: grid;
+  grid-template-rows: 16px 40px 40px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(160deg, #00a6ff53, rgba(212, 255, 254, 0.588));
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.318);
+  border-radius: 8px;
+  padding: 8px 8px;
+  height: 200px;
+  gap: 16px;
+}
+
+.weather-condition-icon {
+  height: 48px;
+  aspect-ratio: 1/1;
+  border: 1px solid rgba(14, 0, 118, 0.347);
+  border-radius: 8px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+div {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

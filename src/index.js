@@ -1,4 +1,6 @@
-// import weather from "./weather";
+import createDisplay from "./displayHandler"
+import "./style/style.css";
+import Weather from "./weather";
 
-console.log("1");
-// weather("london");
+const mWeather = await Weather();
+createDisplay(mWeather);
