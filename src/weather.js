@@ -9,7 +9,7 @@ const Weather = async () => {
     try {
       const encodedLocation = encodeURIComponent(location);
       const weatherAt = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=1b03c9929d6544bfa68193127232906&q=${encodedLocation}&days=7&is_day=1`
+        `https://api.weatherapi.com/v1/forecast.json?key=1b03c9929d6544bfa68193127232906&q=${encodedLocation}&days=7&is_day=1`
       );
       if (!weatherAt.ok) {
         throw new Error("API error");
