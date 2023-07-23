@@ -40,7 +40,6 @@ const updateWeatherAndLocation = () => {
     const daysForcast = document.querySelectorAll(".day-forecast-container");
     daysForcast.forEach((day) => {
       const date = day.querySelector(".date");
-      console.log(date);
       if (day.id === "0") {
         date.textContent = "Today";
       } else if (day.id === "1") {
