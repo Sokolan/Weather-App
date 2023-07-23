@@ -6,7 +6,7 @@ import "./style/header.css";
 import "./style/mainDisplay.css";
 
 // Defines
-const forecastDays = 7;
+const forecastDays = 3;
 let mWeather;
 
 const createElement = (element, className = "", attributes = []) => {
@@ -40,6 +40,7 @@ const updateWeatherAndLocation = () => {
     const daysForcast = document.querySelectorAll(".day-forecast-container");
     daysForcast.forEach((day) => {
       const date = day.querySelector(".date");
+      console.log(date);
       if (day.id === "0") {
         date.textContent = "Today";
       } else if (day.id === "1") {
@@ -179,6 +180,7 @@ const createMainDisplay = () => {
 
     const createForecastContainer = () => {
       const forecastContainer = createElement("div", "forecast-container");
+      forecastContainer.style["grid-template-columns"] = `repeat(${forecastDays}, auto)`;
       for (let i = 0; i < forecastDays; i += 1) {
         const dayForecastContainer = createElement(
           "div",

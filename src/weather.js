@@ -67,6 +67,7 @@ const Weather = async () => {
 
   const getForecast = () => {
     const arr = [];
+    console.log(mWeather.forecast.forecastday);
     mWeather.forecast.forecastday.forEach((day) => {
       const maxTempValue = celcius
         ? Number.parseInt(day.day.maxtemp_c, 10)
